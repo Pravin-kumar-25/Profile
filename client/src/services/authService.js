@@ -24,6 +24,11 @@ export const signUp = async (data) => {
         },
     )
 
+    if(response.status === 201) {
+        localStorage.setItem('token',response.data.accessToken)
+        localStorage.setItem('provider','jwt')
+        return true;
+    }
     console.log(response)
 
 }

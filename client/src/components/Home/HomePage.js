@@ -6,7 +6,7 @@ const HomePage = () => {
   useVerifyToken()
   console.log(user)
 
-  useEffect(()=> {
+  useEffect(() => {
     console.log('use eff')
   })
 

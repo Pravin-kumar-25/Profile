@@ -12,6 +12,8 @@ checkForDuplicateUser = (req, res, next) => {
                 return;
             }
 
+            console.log(user)
+
             if (user !== null) {
                 res.status(409).send({ error: 'User already found with the same email ID' })
                 return
